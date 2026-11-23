@@ -1,0 +1,57 @@
+% Copied from MONAD's paper/shared/monad/definitions.tex
+% (https://github.com/getHarshOnline/MONAD) so this paper builds from its own clone.
+% Update it from there; the source file is the one home of these definitions.
+% Canonical mathematical definitions.
+% Sibling papers import this file via symlink: \input{shared/monad/definitions}
+
+% === State Space ===
+\newcommand{\StateSpace}{\mathcal{X}^{(N)}}
+\newcommand{\Evolution}{\Phi_t}
+\newcommand{\Measure}{\mu}
+
+% === Observer Interface ===
+% Deterministic coarse-graining map in FORC 0.1. A Markov-kernel
+% coarse-graining is a successor-profile generalization.
+\newcommand{\CoarseGrain}{\pi_s}
+\newcommand{\RecordChannel}{\mathcal{C}_R}
+\newcommand{\AllowedOpsAt}[1]{\mathrm{Op}_{#1}}
+\newcommand{\AllowedOps}{\AllowedOpsAt{R}}
+\newcommand{\ResourceVec}{\mathbf{R}}
+
+% === Causality ===
+% Detectable intervention influence; no reflexive or transitive closure.
+\newcommand{\DirectInfluenceAt}[1]{\rightsquigarrow_{#1}}
+\newcommand{\DirectInfluence}{\DirectInfluenceAt{R}}
+% Mutual influence: symmetric by construction, not an equivalence.
+\newcommand{\MutualInfluenceAt}[1]{\leftrightsquigarrow_{#1}}
+\newcommand{\MutualInfluence}{\MutualInfluenceAt{R}}
+\newcommand{\Intervention}{\mathrm{do}}
+\newcommand{\ReliableRecord}{\mathcal{S}}
+\newcommand{\Distinguishability}{D}
+
+% === Information Theory ===
+\newcommand{\ChannelCapacityNats}{C}
+\newcommand{\ChernoffInfo}{\xi}
+
+% === Emergence ===
+\newcommand{\Hierarchy}{\mathcal{H}}
+\newcommand{\Objectivity}{\mathcal{O}}
+
+% === Programme: endogenous distinguishability ===
+% \Distinguishability above is the FORC 0.1 divergence object; the
+% programme notion below is probe-separability. Two senses, two macros.
+\newcommand{\Ctx}{\mathsf{C}}
+\newcommand{\Carrier}[1]{X_{#1}}
+\newcommand{\Probes}[1]{\mathcal{P}_{#1}}
+\newcommand{\Conts}[1]{\mathcal{K}_{#1}}
+\newcommand{\ContProbes}[1]{\mathcal{F}_{#1}}
+\newcommand{\presentEq}[1]{\sim^{0}_{#1}}
+\newcommand{\contEq}[1]{\approx_{#1}}
+\newcommand{\ExtDefect}{\Delta}
+\newcommand{\Relevance}{\mathfrak{R}}
+% Sans-serif A. The calligraphic A names the axiom set in the
+% subsection titled Primitive versus derived structure.
+\newcommand{\Acct}{\mathsf{A}}
+\newcommand{\TransportOp}{\mathcal{T}}
+% Boxed principle; the width stays inside the column.
+\newcommand{\Principle}[1]{\par\medskip\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\centering #1}}\par\medskip}

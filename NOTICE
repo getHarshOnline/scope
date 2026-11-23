@@ -1,0 +1,7 @@
+Scope
+Copyright © 2026 RawThoughts Enterprises Private Limited.
+Author and originator: Harsh Joshi.
+
+Original implementation, design documents and paper: AGPL-3.0-or-later
+(LICENSE). The kernel crate has no dependencies. Third-party dependencies
+retain their own terms.

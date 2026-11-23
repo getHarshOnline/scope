@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Scope"
+type: software
+authors:
+  - family-names: "Joshi"
+    given-names: "Harsh"
+    email: "info@rawthoughts.in"
+    website: "https://rawthoughts.in"
+    affiliation: "RawThoughts Enterprises Private Limited"
+repository-code: "https://github.com/getHarshOnline/scope"
+url: "https://rawthoughts.in"
+abstract: >-
+  Scope gives agent sessions the context to continue earlier work. Source
+  owners supply secret-free snapshots and retain access to the originals.
+  The design selects fresh context within the request's size limit and signs
+  the resulting bundle, with each item's sources, age and omissions explained.
+  This repository holds the scope-kernel Rust library and the system design;
+  the context service, resolver and command line are not implemented.
+keywords:
+  - agent-memory
+  - context-resolution
+  - organizational-intelligence
+  - agentic-systems
+license: AGPL-3.0-or-later

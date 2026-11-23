@@ -1,0 +1,6 @@
+[package]
+name = "scope-kernel"
+version = "0.1.0"
+edition = "2021"
+description = "The kernel of Scope, which gives an agent session fresh, permitted context with its sources and omissions"
+license = "AGPL-3.0-or-later"
